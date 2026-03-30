@@ -29,15 +29,15 @@ export function Navbar() {
 
     return (
         <motion.nav
-            style={{ backgroundColor, borderBottom: `1px solid ${isScrolled ? "rgba(39, 39, 42, 0.4)" : "transparent"}` }}
-            className="fixed top-0 left-0 right-0 z-50 flex h-20 items-center px-6 transition-all duration-300 backdrop-blur-md"
+            style={{ backgroundColor, borderBottom: `1px solid ${isScrolled ? "rgba(255, 255, 255, 0.08)" : "transparent"}` }}
+            className="fixed top-0 left-0 right-0 z-50 flex h-20 items-center px-6 transition-all duration-500 backdrop-blur-xl"
         >
             <div className="container mx-auto flex max-w-7xl items-center justify-between">
-                <Link href="/" className="flex items-center gap-2 text-xl font-bold tracking-tighter text-white">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500 text-black">
+                <Link href="/" className="flex items-center gap-3 text-xl font-bold tracking-tighter text-white group">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500 text-black shadow-[0_0_20px_rgba(16,185,129,0.4)] transition-transform group-hover:rotate-12">
                         <Sparkles className="h-5 w-5" />
                     </div>
-                    <span>KESHAV<span className="text-emerald-500">.</span>SHARMA</span>
+                    <span className="tracking-widest text-sm font-black uppercase">Keshav<span className="text-emerald-500">.</span>Dev</span>
                 </Link>
 
                 <div className="hidden items-center gap-8 md:flex">
@@ -59,7 +59,6 @@ export function Navbar() {
                     </a>
                 </div>
 
-                {/* Mobile menu could be added here later */}
             </div>
         </motion.nav>
     );

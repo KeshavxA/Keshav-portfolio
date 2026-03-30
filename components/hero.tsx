@@ -6,9 +6,10 @@ import { ArrowRight, Sparkles, TrendingUp, Cpu } from "lucide-react";
 export function Hero() {
     return (
         <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-black px-6 pt-20 text-white md:pt-32">
-            <div className="absolute top-0 left-0 h-full w-full overflow-hidden pointer-events-none">
-                <div className="absolute -top-1/4 left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-[120px]" />
-                <div className="absolute top-1/4 -right-1/4 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
+            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+                <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-[120px] animate-pulse" />
+                <div className="absolute top-1/4 right-0 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px]" />
             </div>
 
             <div className="container relative z-10 mx-auto max-w-5xl text-center">
@@ -16,20 +17,20 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-4 py-1.5 text-sm font-medium text-emerald-400 backdrop-blur-md"
+                    className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-emerald-400 backdrop-blur-xl shadow-[0_0_20px_rgba(16,185,129,0.1)]"
                 >
-                    <Sparkles className="h-4 w-4" />
+                    <Sparkles className="h-4 w-4 animate-spin-slow" />
                     <span>Specializing in High-Performance Fintech</span>
                 </motion.div>
 
                 <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    className="mt-8 text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl"
+                    transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                    className="mt-8 text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40"
                 >
-                    The Gold Standard of{" "}
-                    <span className="bg-gradient-to-r from-emerald-400 via-teal-200 to-indigo-400 bg-clip-text text-transparent">
+                    The Gold Standard of <br />
+                    <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-500 bg-clip-text text-transparent">
                         Financial Visualization
                     </span>
                 </motion.h1>
