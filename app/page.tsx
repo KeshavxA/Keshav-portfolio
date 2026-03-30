@@ -10,7 +10,7 @@ export default function Home() {
         <Hero />
         <Projects />
 
-        <section id="experience" className="bg-black py-24 px-6 relative border-t border-zinc-900">
+        <section id="experience" className="bg-black pt-64 pb-64 px-6 relative border-t border-zinc-900">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-4">
               <span className="h-px flex-1 bg-zinc-800"></span>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-zinc-950 py-24 px-6 relative overflow-hidden">
+        <section id="about" className="bg-zinc-950 py-64 px-6 relative overflow-hidden">
           <div className="container mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div>
@@ -101,12 +101,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="bg-black py-24 relative overflow-hidden z-20">
-          <div className="absolute inset-0 opacity-[0.05] pointer-events-none z-0"
+        <section id="contact" className="bg-black py-64 relative overflow-hidden mt-48">
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
             style={{ backgroundImage: `radial-gradient(#ffffff 0.5px, transparent 0.5px)`, backgroundSize: `24px 24px` }} />
-          <div className="absolute -bottom-1/4 -left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-[120px] pointer-events-none z-0" />
+          <div className="absolute -bottom-1/4 -left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-[120px] pointer-events-none" />
 
-          <div className="container relative z-40 mx-auto max-w-4xl px-6 text-center">
+          <div className="container relative mx-auto max-w-4xl px-6 text-center">
             <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-8">
               Let's build something <br /> high-performance.
             </h2>

@@ -50,13 +50,15 @@ export function Navbar() {
                             {item}
                         </Link>
                     ))}
-                    <a
-                        href="/keshav-sharma-resume.pdf"
-                        download="Keshav_Sharma_Resume.pdf"
-                        className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-all hover:bg-zinc-200"
-                    >
-                        Resume
-                    </a>
+                    <div className="flex items-center gap-4">
+                        <a
+                            href="/keshav-sharma-resume.pdf"
+                            download="Keshav_Sharma_Resume.pdf"
+                            className="inline-flex items-center justify-center rounded-xl bg-white px-6 py-2.5 text-xs font-bold uppercase tracking-widest text-black transition-all hover:bg-zinc-200 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                        >
+                            Resume
+                        </a>
+                    </div>
                 </div>
 
             </div>

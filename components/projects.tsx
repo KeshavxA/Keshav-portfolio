@@ -127,8 +127,8 @@ function ProjectCard({ project, idx }: { project: typeof projects[0], idx: numbe
                 </div>
             </div>
 
-            <div className="mt-auto px-8 pb-0 flex items-end justify-center perspective-[2000px] relative z-10">
-                <div className="relative w-full aspect-video rounded-t-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-700 group-hover:rotate-x-6 group-hover:scale-[1.02] group-hover:-translate-y-2">
+            <div className="mt-auto px-8 pb-0 flex items-end justify-center [perspective:2000px] relative z-10">
+                <div className="relative w-full aspect-video rounded-t-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-700 group-hover:[transform:rotateX(10deg)_scale(1.02)_translateY(-8px)]">
                     <Image
                         src={project.image}
                         alt={`${project.title} dashboard`}
@@ -144,7 +144,7 @@ function ProjectCard({ project, idx }: { project: typeof projects[0], idx: numbe
 
 export function Projects() {
     return (
-        <section className="bg-black py-32 px-6 relative" id="projects">
+        <section className="bg-black pt-32 pb-64 px-6 relative" id="projects">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,rgba(16,185,129,0.05),transparent_50%)]" />
 
             <div className="container mx-auto max-w-6xl relative z-10">
