@@ -28,9 +28,9 @@ export function Hero() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="mt-8 text-5xl font-extrabold tracking-tight sm:text-7xl lg:text-8xl"
                 >
-                    Building the Future of{" "}
+                    The Gold Standard of{" "}
                     <span className="bg-gradient-to-r from-emerald-400 via-teal-200 to-indigo-400 bg-clip-text text-transparent">
-                        Financial Data
+                        Financial Visualization
                     </span>
                 </motion.h1>
 
@@ -40,7 +40,7 @@ export function Hero() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400 sm:text-xl"
                 >
-                    Keshav Sharma — a Frontend Developer crafting high-performance Fintech Dashboards that turn complex data into actionable insights.
+                    I engineer data-intensive, high-stakes fintech interfaces that prioritize precision, performance, and elite aesthetics.
                 </motion.p>
 
                 <motion.div

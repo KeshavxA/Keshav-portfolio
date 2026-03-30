@@ -29,9 +29,9 @@ export default function Home() {
                   <p className="text-zinc-500 text-sm font-mono mt-1 sm:mt-0">Jan 2026 — present</p>
                 </div>
                 <ul className="text-zinc-400 space-y-3 list-disc list-inside text-sm leading-relaxed">
-                  <li>Engineered a robust <span className="text-zinc-200">Quiz Management System</span> integrated with performance analytics.</li>
-                  <li>Optimized frontend architecture, leading to a <span className="text-emerald-400 font-semibold">40% increase in user engagement</span>.</li>
-                  <li>Implemented responsive UI components using Tailwind CSS and React for high-traffic dashboards.</li>
+                  <li>Architected high-performance <span className="text-zinc-200">dashboard interfaces</span> for data-intensive enterprise environments.</li>
+                  <li>Optimized frontend assets and state management, yielding a <span className="text-emerald-400 font-semibold">40% engagement surge</span> via tactical performance tuning.</li>
+                  <li>Engineered reusable, pixel-perfect UI systems adhering to strict <span className="text-zinc-200">fintech accessibility</span> and logic standards.</li>
                 </ul>
               </div>
             </div>
