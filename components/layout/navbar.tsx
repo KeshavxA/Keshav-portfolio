@@ -33,8 +33,8 @@ export function Navbar() {
                         <Terminal className="h-6 w-6" />
                     </div>
                     <div className="flex flex-col">
-                        <span className="tracking-[0.4em] text-[10px] font-black uppercase text-emerald-400 opacity-60">Protagonist</span>
-                        <span className="tracking-[0.2em] text-sm font-black uppercase text-white">Keshav<span className="text-emerald-500">.</span>Dev</span>
+                        <span className="tracking-[0.4em] text-[10px] font-black uppercase text-emerald-400 opacity-60"></span>
+                        <span className="tracking-[0.2em] text-sm font-black uppercase text-white">Keshav<span className="text-emerald-500"></span></span>
                     </div>
                 </Link>
 
