@@ -25,16 +25,15 @@ export function Navbar() {
     return (
         <motion.nav
             style={{ backgroundColor, borderBottom: `1px solid ${isScrolled ? "rgba(255, 255, 255, 0.08)" : "transparent"}` }}
-            className="fixed top-0 left-0 right-0 z-[100] flex h-24 items-center px-10 transition-all duration-500 backdrop-blur-2xl"
+            className="fixed top-0 left-0 right-0 z-[100] flex h-20 items-center px-6 transition-all duration-500 backdrop-blur-2xl lg:h-24 lg:px-10"
         >
             <div className="container mx-auto flex max-w-7xl items-center justify-between">
-                <Link href="/" className="flex items-center gap-4 text-xl font-bold tracking-tighter text-white group relative">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500 text-black shadow-[0_0_30px_rgba(16,185,129,0.3)] transition-all group-hover:rotate-12 group-hover:scale-110">
-                        <Terminal className="h-6 w-6" />
+                <Link href="/" className="flex items-center gap-3 text-xl font-bold tracking-tighter text-white group relative shrink-0">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 text-black shadow-[0_0_20px_rgba(16,185,129,0.2)] transition-all group-hover:rotate-12 group-hover:scale-110 lg:h-12 lg:w-12 lg:rounded-2xl">
+                        <Terminal className="h-5 w-5 lg:h-6 lg:w-6" />
                     </div>
                     <div className="flex flex-col">
-                        <span className="tracking-[0.4em] text-[10px] font-black uppercase text-emerald-400 opacity-60"></span>
-                        <span className="tracking-[0.2em] text-sm font-black uppercase text-white">Keshav<span className="text-emerald-500"></span></span>
+                        <span className="tracking-[0.2em] text-xs font-black uppercase text-white lg:text-sm">Keshav<span className="text-emerald-500"></span></span>
                     </div>
                 </Link>
 
@@ -60,9 +59,12 @@ export function Navbar() {
                     </div>
                 </div>
 
-                <div className="lg:hidden">
-                    <Button variant="glass" className="p-3 h-12 w-12 rounded-2xl">
-                        <Terminal className="h-5 w-5" />
+                <div className="lg:hidden flex items-center gap-4">
+                    <Button variant="glass" className="h-10 px-4 rounded-xl text-[10px] tracking-widest uppercase border border-white/10" href="/keshav-sharma-resume.pdf" download="Keshav_Sharma_Resume.pdf">
+                        Resume
+                    </Button>
+                    <Button variant="glass" className="p-2.5 h-10 w-10 rounded-xl border border-white/10">
+                        <Terminal className="h-4 w-4" />
                     </Button>
                 </div>
 
