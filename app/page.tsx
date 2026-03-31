@@ -8,7 +8,6 @@ import { Contact } from "@/components/sections/contact";
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-black transition-colors duration-500 selection:bg-emerald-500/30 selection:text-emerald-300">
-      {/* Global Aesthetics */}
       <div className="bg-grain" />
 
       <Navbar />
@@ -26,7 +25,7 @@ export default function Home() {
           <div className="container mx-auto max-w-7xl flex flex-col items-center justify-between gap-10">
             <div className="flex flex-col items-center gap-4">
               <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 text-emerald-500 mb-2">
-                <span className="text-[10px] font-black tracking-widest text-emerald-500">KS</span>
+                <span className="text-[10px] font-black tracking-widest text-emerald-500">Keshav Sharma</span>
               </div>
             </div>
 
@@ -36,7 +35,6 @@ export default function Home() {
               <div className="flex gap-10 items-center justify-center font-black tracking-[0.3em] uppercase text-[9px] text-zinc-700">
                 <span>Framework: Next.js 16</span>
                 <span>Design: Tailwind 4</span>
-                <span>Engine: Antigravity AI</span>
               </div>
             </div>
 

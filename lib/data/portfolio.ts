@@ -8,8 +8,8 @@ export const portfolioData = {
         specialization: "High-Performance Fintech & Real-Time Dashboards"
     },
     skills: {
-        languages: ["TypeScript", "JavaScript", "Python", "SQL"],
-        frameworks: ["Next.js", "React", "Node.js", "Tailwind CSS"],
+        languages: ["React", "TypeScript", "JavaScript", "Angular", "React Flow", "Redux"],
+        frameworks: ["Next.js", "Node.js", "Tailwind CSS"],
         specialized: ["Framer Motion", "Gemini AI", "Real-time Data", "B2B Dashboards", "Performance Optimization", "Postgres", "Zustand"]
     },
     projects: [

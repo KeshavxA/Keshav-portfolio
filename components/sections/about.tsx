@@ -20,7 +20,6 @@ export function About() {
 
             <div className="container mx-auto max-w-7xl relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-40 items-start">
-                    {/* Education & Info */}
                     <div className="space-y-16">
                         <div className="space-y-6">
                             <motion.div
@@ -74,7 +73,6 @@ export function About() {
                         </div>
                     </div>
 
-                    {/* Skills Grid */}
                     <div className="space-y-16">
                         <div className="space-y-12">
                             <div>

@@ -10,7 +10,6 @@ export function Hero() {
 
     return (
         <section className="relative flex min-h-[100vh] w-full flex-col items-center justify-center overflow-hidden bg-black px-6 pt-20 text-white md:pt-32">
-            {/* Background Grid and Glow */}
             <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
                 <div className="absolute top-0 left-1/4 h-[500px] w-[500px] rounded-full bg-emerald-500/10 blur-[120px] animate-pulse" />
@@ -29,14 +28,14 @@ export function Hero() {
                 </motion.div>
 
                 <motion.h1
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                     className="mt-8 text-7xl font-black tracking-tighter sm:text-8xl lg:text-9xl bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-white/40"
                 >
-                    The New Era of <br />
+                    Hi I'm Keshav,<br />
                     <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-indigo-500 bg-clip-text text-transparent">
-                        Visual Intel
+                        Software Engineer
                     </span>
                 </motion.h1>
 
@@ -46,7 +45,7 @@ export function Hero() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="mx-auto mt-8 max-w-2xl text-lg text-zinc-400 sm:text-xl font-medium tracking-tight"
                 >
-                    Keshav Sharma: Engineering data-intensive, mission-critical interfaces that transform raw metrics into actionable narratives.
+                    Building high-performance digital products at the intersection of robust architecture and seamless user experiences.
                 </motion.p>
 
                 <motion.div
