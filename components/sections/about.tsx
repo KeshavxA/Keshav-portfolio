@@ -30,7 +30,7 @@ export function About() {
                             >
                                 Intelligence Network
                             </motion.div>
-                            <h2 className="text-5xl lg:text-7xl font-black text-white tracking-tighter leading-none mb-4 uppercase">Academic <br /> <span className="text-zinc-600">Foundation</span></h2>
+                            <h2 className="text-4xl lg:text-5xl font-black text-white tracking-tighter leading-none mb-4 uppercase">Academic <br /> <span className="text-zinc-600">Foundation</span></h2>
                         </div>
 
                         <div className="space-y-10">

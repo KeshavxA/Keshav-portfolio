@@ -41,10 +41,10 @@ function ProjectCard({ project, idx }: { project: typeof portfolioData.projects[
             <div className="p-10 pb-0 relative z-10">
                 <div className="flex justify-between items-start mb-8">
                     <div className="space-y-2">
-                        <h3 className="text-3xl font-black text-white tracking-tighter">{project.title}</h3>
+                        <h3 className="text-2xl font-black text-white tracking-tighter">{project.title}</h3>
                         <div className="flex items-center gap-2">
                             <Zap className="h-3 w-3 text-emerald-500 fill-emerald-500/20" />
-                            <p className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em]">Metrics Verified</p>
+                            <p className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em]"></p>
                         </div>
                     </div>
                     <div className="flex gap-4">
@@ -64,7 +64,7 @@ function ProjectCard({ project, idx }: { project: typeof portfolioData.projects[
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
                     {project.metrics.map((metric, mIdx) => (
                         <div key={mIdx} className="p-5 rounded-2xl bg-white/[0.02] border border-white/5 group/metric transition-colors hover:bg-white/[0.04]">
-                            <div className="text-2xl font-black text-white mb-1 group-hover/metric:text-emerald-400">{metric.value}</div>
+                            <div className="text-xl font-black text-white mb-1 group-hover/metric:text-emerald-400">{metric.value}</div>
                             <div className="text-[9px] font-bold uppercase tracking-widest text-zinc-500 mb-1">{metric.label}</div>
                             <div className="text-[10px] text-zinc-600 line-clamp-1">{metric.detail}</div>
                         </div>
@@ -116,7 +116,7 @@ export function Projects() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-6xl sm:text-7xl font-black text-white text-center tracking-tighter"
+                        className="text-5xl sm:text-6xl font-black text-white text-center tracking-tighter"
                     >
                         Advanced <span className="text-zinc-600">Visuals</span>
                     </motion.h2>

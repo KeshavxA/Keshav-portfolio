@@ -25,7 +25,7 @@ export default function Home() {
           <div className="container mx-auto max-w-7xl flex flex-col items-center justify-between gap-10">
             <div className="flex flex-col items-center gap-4">
               <div className="h-10 w-10 flex items-center justify-center rounded-xl bg-zinc-900 border border-zinc-800 text-emerald-500 mb-2">
-                <span className="text-[10px] font-black tracking-widest text-emerald-500">Keshav Sharma</span>
+                <span className="text-[10px] font-black tracking-widest text-emerald-500">KS</span>
               </div>
             </div>
 

@@ -51,7 +51,7 @@ export function Navbar() {
                     <div className="flex items-center gap-4 border-l border-zinc-800 pl-12">
                         <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-zinc-950 border border-zinc-900 group">
                             <Activity className="h-3 w-3 text-emerald-500 animate-pulse" />
-                            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-600">Online</span>
+                            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-600"></span>
                         </div>
                         <Button variant="secondary" href="/keshav-sharma-resume.pdf" download="Keshav_Sharma_Resume.pdf" className="rounded-xl px-5 py-2.5 h-auto text-[10px] tracking-[0.2em] shadow-none border border-white/10">
                             Resume

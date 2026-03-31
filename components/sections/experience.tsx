@@ -23,7 +23,7 @@ export function Experience() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="text-7xl sm:text-8xl font-black text-white text-center tracking-tighter"
+                        className="text-5xl sm:text-6xl font-black text-white text-center tracking-tighter"
                     >
                         Professional <br /> <span className="text-emerald-500 shadow-emerald-500/20 shadow-2xl">Impact</span>
                     </motion.h2>
@@ -43,7 +43,7 @@ export function Experience() {
 
                             <div className="flex flex-col lg:flex-row justify-between mb-8 gap-4">
                                 <div className="space-y-1">
-                                    <h3 className="text-3xl font-black text-white tracking-tight group-hover:text-emerald-400 transition-colors uppercase">{exp.title}</h3>
+                                    <h3 className="text-2xl lg:text-3xl font-black text-white tracking-tight group-hover:text-emerald-400 transition-colors uppercase">{exp.title}</h3>
                                     <p className="inline-flex items-center gap-2 rounded-lg bg-zinc-900 border border-zinc-800 px-3 py-1 text-zinc-400 font-bold tracking-widest text-xs">{exp.company}</p>
                                 </div>
                                 <div className="flex flex-col items-start lg:items-end gap-1">
