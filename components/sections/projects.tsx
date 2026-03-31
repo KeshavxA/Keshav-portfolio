@@ -42,10 +42,6 @@ function ProjectCard({ project, idx }: { project: typeof portfolioData.projects[
                 <div className="flex justify-between items-start mb-8">
                     <div className="space-y-2">
                         <h3 className="text-2xl font-black text-white tracking-tighter">{project.title}</h3>
-                        <div className="flex items-center gap-2">
-                            <Zap className="h-3 w-3 text-emerald-500 fill-emerald-500/20" />
-                            <p className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em]"></p>
-                        </div>
                     </div>
                     <div className="flex gap-4">
                         <a href={project.github} className="h-11 w-11 flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-zinc-400 hover:text-white transition-all hover:bg-white/10">
