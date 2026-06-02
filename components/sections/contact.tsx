@@ -59,20 +59,20 @@ export function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="flex flex-1 items-center justify-between gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-8 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-emerald-500/20 group text-left w-full"
+                        className="flex flex-1 items-center justify-between gap-4 sm:gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-6 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-emerald-500/20 group text-left w-full overflow-hidden"
                     >
-                        <div className="flex items-center gap-6">
-                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl ${copied ? 'bg-emerald-500 text-black' : 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-black'} transition-all`}>
-                                {copied ? <Check className="h-8 w-8" /> : <Mail className="h-8 w-8" />}
+                        <div className="flex items-center gap-4 sm:gap-6 min-w-0 flex-1">
+                            <div className={`flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-3xl ${copied ? 'bg-emerald-500 text-black' : 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-black'} transition-all`}>
+                                {copied ? <Check className="h-6 w-6 sm:h-8 sm:w-8" /> : <Mail className="h-6 w-6 sm:h-8 sm:w-8" />}
                             </div>
-                            <div className="text-left overflow-hidden">
-                                <p className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.4em] mb-1">
+                            <div className="text-left min-w-0 flex-1">
+                                <p className="text-emerald-500 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.4em] mb-1">
                                     {copied ? "Copied!" : "Direct Mail"}
                                 </p>
-                                <p className="text-base sm:text-lg font-black text-white tracking-tight truncate">{personal.email}</p>
+                                <p className="text-sm sm:text-base lg:text-lg font-black text-white tracking-tight truncate block w-full">{personal.email}</p>
                             </div>
                         </div>
-                        <div className="shrink-0">
+                        <div className="shrink-0 ml-2">
                             {copied ? (
                                 <Check className="h-6 w-6 text-emerald-500 shrink-0" />
                             ) : (
@@ -89,18 +89,18 @@ export function Contact() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="flex flex-1 items-center justify-between gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-8 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-indigo-500/20 group text-left w-full"
+                        className="flex flex-1 items-center justify-between gap-4 sm:gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-6 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-indigo-500/20 group text-left w-full overflow-hidden"
                     >
-                        <div className="flex items-center gap-6">
-                            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 group-hover:bg-indigo-500 group-hover:text-white transition-all">
-                                <CalendarDays className="h-8 w-8" />
+                        <div className="flex items-center gap-4 sm:gap-6 min-w-0 flex-1">
+                            <div className="flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-3xl bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                                <CalendarDays className="h-6 w-6 sm:h-8 sm:w-8" />
                             </div>
-                            <div className="text-left">
-                                <p className="text-indigo-500 text-[10px] font-black uppercase tracking-[0.4em] mb-1">Schedule</p>
-                                <p className="text-base sm:text-lg font-black text-white tracking-tight">Book a 15-min chat</p>
+                            <div className="text-left min-w-0 flex-1">
+                                <p className="text-indigo-500 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.4em] mb-1">Schedule</p>
+                                <p className="text-sm sm:text-base lg:text-lg font-black text-white tracking-tight truncate block w-full">Book a 15-min chat</p>
                             </div>
                         </div>
-                        <ArrowUpRight className="h-6 w-6 text-zinc-700 group-hover:text-white transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" />
+                        <ArrowUpRight className="h-6 w-6 text-zinc-700 group-hover:text-white transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0 ml-2" />
                     </motion.a>
                 </div>
 
