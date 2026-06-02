@@ -70,7 +70,7 @@ export const portfolioData = {
             tech: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
             github: "",
             link: "https://knoqq.com",
-            image: "/knoqq.png",
+            image: "/Knoqq.png",
             color: "blue"
         }
     ],
