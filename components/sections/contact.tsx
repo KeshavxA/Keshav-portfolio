@@ -1,11 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Github, Send, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, Github, Send, ArrowUpRight, Copy, Check, CalendarDays } from "lucide-react";
 import { portfolioData } from "@/lib/data/portfolio";
 
 export function Contact() {
     const { personal } = portfolioData;
+
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(personal.email);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
 
     return (
         <section id="contact" className="bg-black py-64 relative overflow-hidden flex flex-col items-center">
@@ -43,44 +52,82 @@ export function Contact() {
                     </motion.p>
                 </div>
 
-                <div className="flex flex-col gap-8 md:flex-row justify-center items-stretch md:items-center">
-                    <motion.a
-                        href={`mailto:${personal.email}`}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mx-auto">
+                    <motion.button
+                        onClick={handleCopy}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="flex flex-1 items-center justify-between gap-10 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-emerald-500/20 group"
+                        className="flex flex-1 items-center justify-between gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-8 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-emerald-500/20 group text-left w-full"
                     >
                         <div className="flex items-center gap-6">
-                            <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-black transition-all">
-                                <Mail className="h-8 w-8" />
+                            <div className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl ${copied ? 'bg-emerald-500 text-black' : 'bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-black'} transition-all`}>
+                                {copied ? <Check className="h-8 w-8" /> : <Mail className="h-8 w-8" />}
                             </div>
-                            <div className="text-left">
-                                <p className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.4em] mb-1">Direct Mail</p>
-                                <p className="text-base font-black text-white tracking-tight">{personal.email}</p>
+                            <div className="text-left overflow-hidden">
+                                <p className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.4em] mb-1">
+                                    {copied ? "Copied!" : "Direct Mail"}
+                                </p>
+                                <p className="text-base sm:text-lg font-black text-white tracking-tight truncate">{personal.email}</p>
                             </div>
                         </div>
-                        <ArrowUpRight className="h-8 w-8 text-zinc-700 group-hover:text-white transition-all transform group-hover:translate-x-2 group-hover:-translate-y-2 shrink-0 md:inline" />
-                    </motion.a>
+                        <div className="shrink-0">
+                            {copied ? (
+                                <Check className="h-6 w-6 text-emerald-500 shrink-0" />
+                            ) : (
+                                <Copy className="h-6 w-6 text-zinc-700 group-hover:text-white transition-all transform group-hover:scale-110 shrink-0" />
+                            )}
+                        </div>
+                    </motion.button>
 
-                    <div className="flex flex-row gap-8 justify-center">
-                        <motion.a
-                            href={personal.linkedin}
-                            target="_blank"
-                            className="flex h-32 w-32 items-center justify-center rounded-[3rem] border border-white/5 bg-zinc-900/30 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-indigo-500/20 group"
-                        >
-                            <Linkedin className="h-10 w-10 text-zinc-600 group-hover:text-indigo-400 transition-all group-hover:scale-110" />
-                        </motion.a>
-                        <motion.a
-                            href={personal.github}
-                            target="_blank"
-                            className="flex h-32 w-32 items-center justify-center rounded-[3rem] border border-white/5 bg-zinc-900/30 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-white/20 group"
-                        >
-                            <Github className="h-10 w-10 text-zinc-600 group-hover:text-white transition-all group-hover:scale-110" />
-                        </motion.a>
-                    </div>
+                    <motion.a
+                        href="https://calendly.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="flex flex-1 items-center justify-between gap-6 rounded-[3rem] border border-white/5 bg-zinc-900/30 p-8 sm:p-10 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-indigo-500/20 group text-left w-full"
+                    >
+                        <div className="flex items-center gap-6">
+                            <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-indigo-500/10 text-indigo-500 border border-indigo-500/20 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                                <CalendarDays className="h-8 w-8" />
+                            </div>
+                            <div className="text-left">
+                                <p className="text-indigo-500 text-[10px] font-black uppercase tracking-[0.4em] mb-1">Schedule</p>
+                                <p className="text-base sm:text-lg font-black text-white tracking-tight">Book a 15-min chat</p>
+                            </div>
+                        </div>
+                        <ArrowUpRight className="h-6 w-6 text-zinc-700 group-hover:text-white transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" />
+                    </motion.a>
                 </div>
+
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    className="flex flex-row gap-6 justify-center mt-12"
+                >
+                    <a
+                        href={personal.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-20 w-20 items-center justify-center rounded-[2rem] border border-white/5 bg-zinc-900/30 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-indigo-500/20 group"
+                    >
+                        <Linkedin className="h-8 w-8 text-zinc-600 group-hover:text-indigo-400 transition-all group-hover:scale-110" />
+                    </a>
+                    <a
+                        href={personal.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex h-20 w-20 items-center justify-center rounded-[2rem] border border-white/5 bg-zinc-900/30 backdrop-blur-3xl hover:bg-zinc-900 transition-all hover:border-white/20 group"
+                    >
+                        <Github className="h-8 w-8 text-zinc-600 group-hover:text-white transition-all group-hover:scale-110" />
+                    </a>
+                </motion.div>
             </div>
         </section>
     );
