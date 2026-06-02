@@ -44,10 +44,12 @@ function ProjectCard({ project, idx }: { project: typeof portfolioData.projects[
                         <h3 className="text-2xl font-black text-white tracking-tighter">{project.title}</h3>
                     </div>
                     <div className="flex gap-4">
-                        <a href={project.github} className="h-11 w-11 flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-zinc-400 hover:text-white transition-all hover:bg-white/10">
-                            <Github className="h-5 w-5" />
-                        </a>
-                        <a href={project.link} className="h-11 w-11 flex items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 hover:text-white hover:bg-emerald-500 transition-all shadow-[0_0_20px_rgba(16,185,129,0.1)]">
+                        {project.github && (
+                            <a href={project.github} className="h-11 w-11 flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 text-zinc-400 hover:text-white transition-all hover:bg-white/10" target="_blank" rel="noopener noreferrer">
+                                <Github className="h-5 w-5" />
+                            </a>
+                        )}
+                        <a href={project.link} className="h-11 w-11 flex items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 hover:text-white hover:bg-emerald-500 transition-all shadow-[0_0_20px_rgba(16,185,129,0.1)]" target="_blank" rel="noopener noreferrer">
                             <ArrowUpRight className="h-5 w-5" />
                         </a>
                     </div>

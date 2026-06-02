@@ -57,9 +57,34 @@ export const portfolioData = {
             link: "https://vector-shift-automation-be6d.vercel.app/",
             image: "/vectorshift.png",
             color: "indigo"
+        },
+        {
+            id: "knoqq",
+            title: "Knoqq",
+            description: "A high-performance marketing website designed to showcase home help services, featuring an engaging, dynamic UI to drive user conversion and app downloads.",
+            metrics: [
+                { label: "Performance", value: "98", detail: "Lighthouse performance score" },
+                { label: "UI/UX", value: "Pixel-Perfect", detail: "Modern and responsive design" },
+                { label: "Conversion", value: "Optimized", detail: "Streamlined user journey" }
+            ],
+            tech: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+            github: "",
+            link: "https://knoqq.com",
+            image: "/knoqq.png",
+            color: "blue"
         }
     ],
     experience: [
+        {
+            title: "Frontend Developer",
+            company: "Knoqq",
+            period: "Freelance",
+            bullets: [
+                "Engineered and deployed the official marketing website for Knoqq, driving brand visibility and app downloads.",
+                "Built responsive, high-performance UI components utilizing Next.js and Tailwind CSS.",
+                "Optimized website load times, accessibility, and SEO to ensure a seamless cross-platform user experience."
+            ]
+        },
         {
             title: "Associate Software Engineer Intern",
             company: "CodeTikki",
@@ -74,7 +99,7 @@ export const portfolioData = {
     education: {
         degree: "Bachelor of Computer Applications",
         school: "College of Engineering Roorkee",
-        cgpa: "8.1 / 10",
+        cgpa: "7.98 / 10",
         location: "Roorkee, Uttarakhand, India"
     }
 };
