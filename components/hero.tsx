@@ -56,7 +56,7 @@ export function Hero() {
                         <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform group-hover:translate-x-full duration-1000" />
                     </a>
 
-                    <a href="/keshav-sharma-resume.pdf" download="Keshav_Sharma_Resume.pdf" className="flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/50 px-8 font-semibold text-white backdrop-blur-md transition-all hover:bg-zinc-800 sm:w-auto">
+                    <a href="/New_Updated_Resume.pdf" download="Keshav_Sharma_Resume.pdf" className="flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/50 px-8 font-semibold text-white backdrop-blur-md transition-all hover:bg-zinc-800 sm:w-auto">
                         Download Resume
                     </a>
                 </motion.div>

@@ -54,7 +54,7 @@ export function Navbar() {
                             </Link>
                         ))}
                         <div className="flex items-center gap-4 border-l border-zinc-800 pl-12">
-                            <Button variant="secondary" href="/keshav-sharma-resume.pdf" download="Keshav_Sharma_Resume.pdf" className="rounded-xl px-5 py-2.5 h-auto text-[10px] tracking-[0.2em] shadow-none border border-white/10">
+                            <Button variant="secondary" href="/New_Updated_Resume.pdf" download="Keshav_Sharma_Resume.pdf" className="rounded-xl px-5 py-2.5 h-auto text-[10px] tracking-[0.2em] shadow-none border border-white/10">
                                 Resume
                             </Button>
                         </div>
@@ -64,10 +64,10 @@ export function Navbar() {
                         <Button
                             variant="glass"
                             className="h-10 px-4 rounded-xl text-[10px] font-black tracking-widest uppercase border border-white/10"
-                            href="/keshav-sharma-resume.pdf"
+                            href="/New_Updated_Resume.pdf"
                             download="Keshav_Sharma_Resume.pdf"
                         >
-                            Resume
+                            RÉSUMÉ
                         </Button>
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}

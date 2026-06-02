@@ -58,7 +58,7 @@ export function Hero() {
                         Explore Work
                         <ArrowRight className="h-4 w-4" />
                     </Button>
-                    <Button variant="outline" href="/keshav-sharma-resume.pdf" download="Keshav_Sharma_Resume.pdf">
+                    <Button variant="outline" href="/New_Updated_Resume.pdf" download="Keshav_Sharma_Resume.pdf">
                         Get Profile
                     </Button>
                 </motion.div>
